@@ -13,7 +13,9 @@
   <meta name="author" content="" />
 
   <title>PRESTAMOS AL TOQUE</title>
-
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/lotes.js"></script>
+  <script src="js/bootstrap.js"></script>
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -86,30 +88,30 @@
         <div class="col-md-6 mx-auto">
           <form action="">
             <div>
-              <input type="text" placeholder="Ingrese DNI..." maxlength="8" required>
+              <input type="text" id="dni" placeholder="Ingrese DNI..." maxlength="8" required>
             </div>
             <div>
-              <input type="text" placeholder="Ingrese Nombre..." required>
+              <input type="text" id="nom" placeholder="Ingrese Nombre..." required>
             </div>
             <div>
-              <input type="text" placeholder="Ingrese Apellidos..." required>
+              <input type="text" id="ape" placeholder="Ingrese Apellidos..." required>
             </div>
             <div>
-              <input type="text" placeholder="Ingrese Telefono..." required>
+              <input type="text" id="tel" placeholder="Ingrese Telefono..." required>
             </div>
             <div>
-              <input type="email" placeholder="Ingrese EMAIL..." required>
+              <input type="email" id="ema" placeholder="Ingrese EMAIL..." required>
             </div>
             <div>
-              <select name="" id="">
-                <option value="" disabled selected>Prestamos</option>
+              <select name="" id="tip">
+                <option value="Prestamos"  disabled selected>Prestamos</option>
               </select>
             </div>
             <div>
-              <input type="text" placeholder="Ingrese Monto..." required>
+              <input type="text" id="mon" placeholder="Ingrese Monto..." required>
             </div>
             <div>
-              <select name="" id="" required>
+              <select name="" id="zona" required>
                 <option value="" disabled selected>Seleccione Zona</option>
                 <option value="">Piura</option>
                 <option value="">Catacaos</option>
@@ -117,14 +119,14 @@
               </select>
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Algun Mensaje ??">
-            </div>
-            <div class="d-flex justify-content-center ">
-              <button>
-                ENVIAR
-              </button>
+              <input type="text" id="msg" class="message-box" placeholder="Algun Mensaje ??">
             </div>
           </form>
+          <div class="d-flex justify-content-center ">
+            <button id="enviar">
+              ENVIAR
+            </button>
+          </div>
         </div>
       </div>
 
@@ -262,8 +264,7 @@
 
   <!-- footer section -->
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
 </body>
 
 </html>
